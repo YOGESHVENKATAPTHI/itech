@@ -12,7 +12,7 @@ jobs:
   build:
     name: Build and analyze with SonarQube
     runs-on: ubuntu-latest
-
+    environment: sonaritech
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
