@@ -12,7 +12,7 @@ jobs:
     name: Build, test and SonarQube
     runs-on: ubuntu-latest
     # If you store secrets in an environment, uncomment the next line and ensure the environment exists
-    # environment: sonaritech
+    environment: sonaritech
 
     steps:
       - name: Checkout repository
