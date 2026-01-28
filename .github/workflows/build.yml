@@ -12,7 +12,7 @@ jobs:
     name: Build, test and SonarQube
     runs-on: ubuntu-latest
     # If you use environment secrets, uncomment and set the environment name
-    # environment: sonaritech
+    environment: sonaritech
 
     steps:
       - name: Checkout repository
@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
+          #cache: 'npm'
 
       - name: Install JS dependencies
         run: npm ci
